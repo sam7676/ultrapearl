@@ -1,5 +1,6 @@
 package com.sam.ultrapearl.item.custom;
 
+import net.minecraft.enchantment.Enchantment;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
 import net.minecraft.stats.Stats;
@@ -43,4 +44,15 @@ public class ultrapearl extends Item {
     public boolean hasEffect(ItemStack stack) {
         return true;
     }
+
+    @Override
+    public boolean isBookEnchantable(ItemStack stack, ItemStack book) {
+        return false;
+    }
+
+    @Override
+    public boolean isEnchantable(ItemStack stack) {
+        return false;
+    }
+
 }
