@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "ultrapearl:ultra_pearl"
+    },
+    "title": "Celestial Traveller",
+    "description": "Obtain the Ultra Pearl",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:end/kill_dragon",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "ultrapearl:ultra_pearl"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 500
+  }
+}
